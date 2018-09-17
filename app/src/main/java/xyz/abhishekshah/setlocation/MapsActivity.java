@@ -124,8 +124,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         };
     }
-//hello test 2257656765yuI love
-
+//india is a test 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
