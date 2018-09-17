@@ -60,7 +60,8 @@ import android.location.Address;
         import android.location.Geocoder;
         import android.os.Build;
         import android.os.Bundle;
-        import android.support.v4.app.FragmentActivity;
+import android.support.annotation.RequiresApi;
+import android.support.v4.app.FragmentActivity;
         import android.view.WindowManager;
         import android.widget.TextView;
 
@@ -100,6 +101,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void configureCameraIdle() {
         onCameraIdleListener = new GoogleMap.OnCameraIdleListener() {
+            @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
             @Override
             public void onCameraIdle() {
 
@@ -122,8 +124,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         };
     }
-//hello
-//helllo test 1
+//hello test 2257656765yu
+
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
